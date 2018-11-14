@@ -21,7 +21,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                String username=usernameInput.getText().toString();
-                Toast.makeText(getApplicationContext(),"Username entered is "+username,Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Username entered is: "+username,Toast.LENGTH_LONG).show();
             }
         });
 
