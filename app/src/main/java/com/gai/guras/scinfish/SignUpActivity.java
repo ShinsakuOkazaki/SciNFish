@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class SignUpActivity extends AppCompatActivity {
     private EditText usernameInput;
     private Button submitButton;
+    private EditText passwordInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,13 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         usernameInput=findViewById(R.id.usernameInput);
         submitButton=findViewById(R.id.buttonSubmit);
+        passwordInput = findViewById(R.id.passwordInput);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                String username=usernameInput.getText().toString();
-                Toast.makeText(getApplicationContext(),"Username entered is: "+username,Toast.LENGTH_LONG).show();
+               String password=passwordInput.getText().toString();
+               Toast.makeText(getApplicationContext(),"Username entered is: "+username,Toast.LENGTH_LONG).show();
             }
         });
 
