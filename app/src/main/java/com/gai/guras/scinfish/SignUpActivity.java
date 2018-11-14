@@ -16,15 +16,16 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        usernameInput=findViewById(R.id.usernameInput);
-        submitButton=findViewById(R.id.buttonSubmit);
+        usernameInput = findViewById(R.id.usernameInput);
+        submitButton = findViewById(R.id.buttonSubmit);
         passwordInput = findViewById(R.id.passwordInput);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                String username=usernameInput.getText().toString();
                String password=passwordInput.getText().toString();
-               Toast.makeText(getApplicationContext(),"Username entered is: "+username,Toast.LENGTH_LONG).show();
+               Toast.makeText(getApplicationContext(),"Username entered is: "+ username,Toast.LENGTH_LONG).show();
+               Toast.makeText(getApplicationContext(),"Username entered is: "+ password,Toast.LENGTH_LONG).show();
             }
         });
 
