@@ -1,4 +1,10 @@
 <resources>
+    <string-array name="security_question">
+        <item>What name is your hometown</item>
+        <item>What first name is your best teacher</item>
+        <item>What name is your middle school</item>
+    </string-array>
+
     <string name="app_name">SciNFish</string>
     <string name="title_activity_login">Sign in</string>
 
@@ -25,4 +31,5 @@
     <string name="create_a_new_account">Create A New Account</string>
     <string name="username">Username:</string>
     <string name="submit">submit</string>
+    <string name="password">Password:</string>
 </resources>
